@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Game",
+            "type": "lldb",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "cwd": "${workspaceFolder}",
+            "program": "dummyPath",
+            "windows": {
+                "program": "${workspaceFolder}/Binaries/Windows/Development/${workspaceFolderBasename}.exe"
+            },
+            "linux": {
+                "program": "${workspaceFolder}/Binaries/Linux/Development/${workspaceFolderBasename}"
+            },
+            "args": [],
+            "stopOnEntry": false
+        }
+    ]
+}
